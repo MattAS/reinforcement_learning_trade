@@ -17,7 +17,7 @@ class Data:
         self.endpoint = r'https://api.tdameritrade.com/v1/marketdata/{}/pricehistory'.format(
             ticker)
         if start_date and end_date is None:
-            self.payload = {'apikey': 'YH6LPT14YIMMVFOTP0TH7ZTVSWBL3JTD',
+            self.payload = {'apikey': config.API_KEY,
                             'periodType': periodType,
                             'frequencyType': frequencyType,
                             'frequency': frequency,
