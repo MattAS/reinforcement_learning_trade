@@ -13,3 +13,8 @@ In this project, I implemented a Deep Q-Learning Reinforcement agent to learn an
 
 ## Results:
 The agent showed promising performance. Since the training only used one stock (Google), the model is overfitted to that stock. The training loop should be improved by either using synthetic stock market data or a culmination of multiple stocks. I should also find other metrics for the agent's observation. Some of these metrics could be the volume of trades, current time of day or day of week and fundemental data of company. The reward could also be tweaked. I should try to use relative closing prices instead of the closing price to check whether having a metric independent of the actual price helps the model learn.
+
+## Requirements:
+- Pytorch
+- ptan
+- OpenAI
